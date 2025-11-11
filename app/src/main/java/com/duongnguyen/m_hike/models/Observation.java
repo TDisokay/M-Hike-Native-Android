@@ -5,7 +5,7 @@ public class Observation {
     private String observation;
     private String observationTime;
     private String comments;
-    private long hikeId; // Foreign Key
+    private long hikeId;
 
     // Constructors
     public Observation() {}

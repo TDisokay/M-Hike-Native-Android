@@ -204,20 +204,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ArrayList<Hike> hikes = new ArrayList<>();
         try (SQLiteDatabase db = this.getReadableDatabase(); Cursor cursor = db.query(
                 TABLE_HIKES,
-                null, // columns (null = all)
-                COLUMN_HIKE_NAME + " LIKE ?", // selection
-                new String[]{"%" + namePattern + "%"}, // selectionArgs
-                null, // groupBy
-                null, // having
-                COLUMN_HIKE_NAME + " ASC" // orderBy
+                null,
+                COLUMN_HIKE_NAME + " LIKE ?",
+                new String[]{"%" + namePattern + "%"},
+                null,
+                null,
+                COLUMN_HIKE_NAME + " ASC"
         )) {
-            // columns (null = all)
-            // selection
-            // selectionArgs
-            // groupBy
-            // having
-            // orderBy
-
             if (cursor.moveToFirst()) {
                 do {
                     Hike hike = new Hike();

@@ -46,13 +46,13 @@ public class HikeAdapter extends RecyclerView.Adapter<HikeAdapter.HikeViewHolder
         holder.tvHikeLocation.setText(hike.getLocation());
         holder.tvHikeDate.setText(hike.getHikeDate());
 
-        // Set click listener for the whole item
+        // Click listener for whole item
         holder.itemView.setOnClickListener(v -> actionListener.onHikeClick(hike));
 
-        // Set click listener for the edit button
+        // Click listener for edit button
         holder.btnEditHike.setOnClickListener(v -> actionListener.onEditClick(hike));
 
-        // Set click listener for the delete button
+        // Click listener for delete button
         holder.btnDeleteHike.setOnClickListener(v -> actionListener.onDeleteClick(hike));
     }
 
@@ -61,7 +61,6 @@ public class HikeAdapter extends RecyclerView.Adapter<HikeAdapter.HikeViewHolder
         return hikeList.size();
     }
 
-    // ViewHolder class
     public static class HikeViewHolder extends RecyclerView.ViewHolder {
         TextView tvHikeName, tvHikeLocation, tvHikeDate;
         ImageButton btnEditHike, btnDeleteHike;

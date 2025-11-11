@@ -33,7 +33,6 @@ public class HikeDetailActivity extends AppCompatActivity implements Observation
     private ArrayList<Observation> observationList;
     private FloatingActionButton fabAddObservation;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

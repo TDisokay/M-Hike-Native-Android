@@ -25,9 +25,7 @@ public class Hike implements Serializable {
         this.description = description;
     }
 
-    // --- Getters and Setters ---
-    // (Right-click > Generate > Getter and Setter > Select All)
-
+    // Getters and Setters
     public long getId() { return id; }
     public void setId(long id) { this.id = id; }
 

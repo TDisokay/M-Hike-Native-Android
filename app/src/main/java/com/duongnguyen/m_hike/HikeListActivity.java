@@ -23,13 +23,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 
 public class HikeListActivity extends AppCompatActivity implements HikeAdapter.OnHikeActionListener {
-
     private RecyclerView recyclerView;
     private HikeAdapter hikeAdapter;
     private ArrayList<Hike> hikesList;
     private FloatingActionButton fabAdd;
     private DatabaseHelper dbHelper;
-
     private TextView tvEmptyState;
     private View emptyStateContainer;
     private boolean isSearching = false;
@@ -141,7 +139,6 @@ public class HikeListActivity extends AppCompatActivity implements HikeAdapter.O
         hikeAdapter.notifyDataSetChanged();
         checkIfListIsEmpty();
     }
-
 
     @Override
     public void onHikeClick(Hike hike) {

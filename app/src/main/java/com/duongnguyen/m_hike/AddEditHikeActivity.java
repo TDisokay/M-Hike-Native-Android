@@ -117,7 +117,6 @@ public class AddEditHikeActivity extends AppCompatActivity {
         etDate.setText(sdf.format(myCalendar.getTime()));
     }
 
-    @SuppressWarnings("unchecked")
     private void populateFields(Hike hike) {
         etHikeName.setText(hike.getName());
         etLocation.setText(hike.getLocation());
